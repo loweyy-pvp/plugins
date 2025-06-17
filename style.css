@@ -1,0 +1,65 @@
+/* Stil general */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #1e1e1e;
+    color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(45deg, #00ff99, #00ccff);
+    padding: 40px;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+}
+
+/* Navigatie */
+nav {
+    background-color: #333;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    color: #00ffcc;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Sectiuni */
+section {
+    padding: 40px;
+    border-bottom: 1px solid #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li::before {
+    content: "▶ ";
+    color: #00ccff;
+}
+
+/* Discord */
+.discord {
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+    color: #777;
+}
