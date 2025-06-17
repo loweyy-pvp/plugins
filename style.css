@@ -6,51 +6,62 @@ body {
     padding: 0;
 }
 
+/* HEADER cu imagine Minecraft */
 header {
-    background-color: #1f1f1f;
-    padding: 30px;
+    background: url('https://i.imgur.com/oPj4A8u.png') center/cover no-repeat;
+    padding: 60px 20px;
     text-align: center;
-    border-bottom: 2px solid #00ffff;
+    border-bottom: 3px solid #00ffff;
 }
 
 header h1 {
     color: #00ffff;
-    font-size: 36px;
+    font-size: 42px;
+    text-shadow: 2px 2px #000;
 }
 
 header p {
-    color: #cccccc;
-    font-size: 18px;
+    color: #ddd;
+    font-size: 20px;
+    text-shadow: 1px 1px #000;
 }
 
 nav {
-    background-color: #292929;
-    padding: 10px 0;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    padding: 12px 0;
     text-align: center;
+    box-shadow: 0 4px 10px #000;
 }
 
 nav a {
-    color: #00ffff;
-    margin: 0 15px;
+    color: #000;
+    margin: 0 20px;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 18px;
+    transition: transform 0.3s, color 0.3s;
 }
 
 nav a:hover {
-    color: #ff00ff;
+    transform: scale(1.1);
+    color: #fff;
 }
 
 section {
-    padding: 30px;
+    padding: 40px 20px;
     max-width: 900px;
     margin: 0 auto;
+    background: #1f1f1f;
+    border-radius: 12px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px #00ffff55;
 }
 
 h2 {
     color: #00ffff;
     border-bottom: 2px solid #00ffff;
     padding-bottom: 5px;
+    text-align: center;
 }
 
 ul {
@@ -59,28 +70,65 @@ ul {
 }
 
 li {
-    background-color: #1f1f1f;
+    background-color: #292929;
     margin: 10px 0;
-    padding: 10px;
+    padding: 12px;
     border-radius: 8px;
-    transition: transform 0.2s, background-color 0.3s;
+    transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 0 8px #00ffff55;
 }
 
 li:hover {
-    transform: scale(1.03);
+    transform: scale(1.05);
     background-color: #333333;
+    box-shadow: 0 0 15px #00ffffaa;
 }
 
-.discord {
-    color: #ff00ff;
+/* Discord box */
+.discord-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.discord-box input {
+    padding: 8px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+    background: #222;
+    color: #0ff;
+    width: 200px;
+    text-align: center;
+}
+
+.discord-box button {
+    padding: 8px 12px;
+    border: none;
+    background: linear-gradient(90deg, #00ffff, #ff00ff);
+    color: #000;
+    border-radius: 0 8px 8px 0;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.discord-box button:hover {
+    transform: scale(1.1);
+}
+
+#copiedMsg {
+    color: #0f0;
+    text-align: center;
+    margin-top: 10px;
     font-weight: bold;
 }
 
+/* FOOTER cu imagine Minecraft */
 footer {
-    background-color: #1f1f1f;
-    color: #777777;
+    background: url('https://i.imgur.com/oPj4A8u.png') center/cover no-repeat;
+    color: #ccc;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
     margin-top: 20px;
-    border-top: 2px solid #00ffff;
+    border-top: 3px solid #00ffff;
+    text-shadow: 1px 1px #000;
 }
